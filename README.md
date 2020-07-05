@@ -15,8 +15,9 @@ To run test navigate to the project directory and execute the following command:
 mvn clean test -DsuiteXmlFile="./src/test/java/XMLs/testng.xml"
 ```
 - for MacOS(terminal)
+```bash
 mvn clean test -DsuiteXmlFile=./src/test/java/XMLs/testng.xml
-
+```bash
 
 To see Allure reports execute the following in the same project directory:
 
