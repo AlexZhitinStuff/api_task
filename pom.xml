@@ -8,14 +8,14 @@
   <properties>
     <aspectj.version>1.9.5</aspectj.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> <!--needed to accept command to run a specific suite from cmd and pass it to maven-surefire-plugin below-->
+    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
   </properties>
 
 
   <build>
 
 
-    <resources> <!--resources tag points to Maven where to look into before running tests. e.g. log4j2.xml to apply logger configurations-->
+    <resources>
       <resource>
         <directory>src/main/resources/</directory>
         <filtering>true</filtering>
@@ -50,7 +50,7 @@
         <configuration>
           <filesets>
             <fileset>
-              <directory>${basedir}/allure-results</directory> <!-- Same as /Users/Sasha/Documents/Selenium_projects/testng_maven/Allure Is used to clean allure-results before each test run-->
+              <directory>${basedir}/allure-results</directory>
             </fileset>
           </filesets>
         </configuration>
@@ -199,6 +199,5 @@
     </dependency>
 
   </dependencies>
-
 
 </project>

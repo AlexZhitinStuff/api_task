@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
+    <listeners>
+        <listener class-name="Base.AllureTestListener"/>
+    </listeners>
 
     <test verbose="2" preserve-order="true" name="API tests">
         <classes>
