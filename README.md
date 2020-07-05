@@ -17,9 +17,8 @@ mvn clean test -DsuiteXmlFile="./src/test/java/XMLs/testng.xml"
 - for MacOS(terminal)
 ```bash
 mvn clean test -DsuiteXmlFile=./src/test/java/XMLs/testng.xml
-```bash
-
-To see Allure reports execute the following in the same project directory:
+```
+To see Allure reports run the following command in the same project directory:
 
 ```bash
 allure serve allure-results
